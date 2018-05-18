@@ -22,14 +22,14 @@ export default class LoginFormScreen extends Component {
         <TextInput
           value={this.state.username}
           style={styles.input}
-          onChange={event => this.setState({ value: event.target.username })}
+          onChangeText={username => this.setState({ username })}
           placeholder="Username"
           placeholderTextColor="rgba(255,255,255,0.7)"
         />
         <TextInput
           value={this.state.password}
           style={styles.input}
-          onChange={event => this.setState({ value: event.target.password })}
+          onChangeText={password => this.setState({ password })}
           placeholder="Password"
           returnKeyType="go"
           placeholderTextColor="rgba(255,255,255,0.7)"
